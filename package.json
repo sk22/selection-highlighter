@@ -1,0 +1,25 @@
+{
+  "name": "selection-highlighter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "selection-highligher.js",
+  "dependencies": {
+    "babel-minify": "^0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "minify index.js -d dist && node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sk22/selection-highlighter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sk22/selection-highlighter/issues"
+  },
+  "homepage": "https://github.com/sk22/selection-highlighter#readme"
+}
