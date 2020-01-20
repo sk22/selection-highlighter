@@ -1,3 +1,3 @@
-````js
+```js
 javascript:let mouseEvent=null;function replacePart(a,b,c,d){b.innerHTML=(c?"<span>"+b.innerText.slice(0,a.startOffset)+"</span>":"")+"<span style=\"background: yellow\">"+b.innerText.slice(c?a.startOffset:0,d?a.endOffset:void 0)+"</span>"+(d?"<span>"+b.innerText.slice(a.endOffset)+"</span>":"")}document.addEventListener("selectstart",()=>{mouseEvent=document.addEventListener("mouseup",()=>{document.removeEventListener("mouseup",mouseEvent);const a=document.getSelection(),{anchorOffset:b,extentOffset:c}=a,d=a.getRangeAt(0),e=Math.min(b,c),f=Math.max(c,b);if(0<f-e){const{startContainer:a,endContainer:b}=d,c="yellow"===a.parentElement.style.background;if(c)a.parentElement.outerHTML=a.parentElement.innerText;else{const c=a===b;replacePart(d,a.parentElement,!0,c);for(let c=a.parentElement;c.nextSibling&&c!==b;)c=c.nextSibling,replacePart(d,c,!1,!1);c||replacePart(d,b.parentElement,!1,!0)}}})});
 ```

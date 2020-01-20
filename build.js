@@ -2,7 +2,7 @@ const { writeFileSync, readFileSync } = require('fs')
 
 const minified = readFileSync('./dist/index.js').toString()
 
-writeFileSync('readme.md', `\`\`\`\`js\njavascript:${minified}\n\`\`\`\n`)
+writeFileSync('readme.md', `\`\`\`js\njavascript:${minified}\n\`\`\`\n`)
 
 writeFileSync('docs/index.html', `
 <!DOCTYPE html>
