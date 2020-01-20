@@ -32,7 +32,7 @@ writeFileSync('docs/index.html', `
       <span>To use this on any other website, save the link as a bookmark by </span>
       <span style="background: yellow">dragging it into your bookmark bar</span><span>.</span>
     </p>
-    <p><small>Try pressing CTRL + Shift + B if you cannot find a bookmark bar</small></p>
+    <p><small>Try pressing CTRL + Shift + B if you cannot find a bookmark bar.</small></p>
     <p><small>Please note that this tool is very buggy at this point. But in its very core function, it works. You might want to check back later for updates.</small></p>
     <hr>
     <p>
