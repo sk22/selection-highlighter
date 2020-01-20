@@ -15,7 +15,7 @@ writeFileSync('docs/index.html', `
   </head>
   <body>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, vero magnam obcaecati tempora quae voluptatem fugiat maxime voluptatibus debitis, consectetur odit. Nostrum ipsa doloribus totam omnis enim harum quo labore.</p>
-    <a href="javascript:${minified}">Highlight!</a>
+    <a href="javascript:${minified.replace(/"/g, "&quot;")}">Highlight!</a>
   </body>
 </html>
 `)
